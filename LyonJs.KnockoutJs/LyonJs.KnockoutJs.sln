@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyonJs.KnockoutJs.Seo", "LyonJs.KnockoutJs.Seo\LyonJs.KnockoutJs.Seo.csproj", "{80EA55F1-0AA0-42CE-8B1A-40B45DA9CA22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyonJs.KnockoutJs.Demo", "LyonJs.KnockoutJs.Demo\LyonJs.KnockoutJs.Demo.csproj", "{2FA50D51-A37F-49FF-A529-B485B2F6444F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyonJs.KnockoutJs.LiveCoding", "LyonJs.KnockoutJs.LiveCoding\LyonJs.KnockoutJs.LiveCoding.csproj", "{9986372E-7A23-4367-92C3-0C3D83CD3A77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80EA55F1-0AA0-42CE-8B1A-40B45DA9CA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EA55F1-0AA0-42CE-8B1A-40B45DA9CA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EA55F1-0AA0-42CE-8B1A-40B45DA9CA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EA55F1-0AA0-42CE-8B1A-40B45DA9CA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA50D51-A37F-49FF-A529-B485B2F6444F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA50D51-A37F-49FF-A529-B485B2F6444F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA50D51-A37F-49FF-A529-B485B2F6444F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA50D51-A37F-49FF-A529-B485B2F6444F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9986372E-7A23-4367-92C3-0C3D83CD3A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9986372E-7A23-4367-92C3-0C3D83CD3A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9986372E-7A23-4367-92C3-0C3D83CD3A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9986372E-7A23-4367-92C3-0C3D83CD3A77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

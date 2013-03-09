@@ -1,0 +1,34 @@
+﻿<header>
+    <div>
+        <form method="post" data-bind="submit: search">
+            <h1>LyonJs</h1>
+            <div>
+                <input type="search" data-bind="value: searchValue, valueUpdate: 'afterkeydown'" placeholder="Search an unicorn..." />
+                <input type="search" data-bind="value: valueReversed, valueUpdate: 'afterkeydown'" placeholder="Reverse search..." />
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</header>
+<div id="body">
+    <aside>
+        <ul data-bind="foreach: filtedResults">
+            <li data-bind="click: $parent.select, css: { selected: IsSelected }">
+                <img data-bind="attr: { src: ImageUri, alt: Name }" />
+                <span data-bind="text: Name"></span>
+            </li>
+        </ul>
+    </aside>
+    <div>
+        <!-- ko { with: selectedResult } -->
+        <img data-bind="attr: { src: ImageUri, alt: Name }" />
+        <p data-bind="text: name"></p>
+        <p class="keywords">Keyword : 
+            <!-- ko { foreach: Keywords } -->
+            <span data-bind="text: $data"></span>
+            <!-- /ko -->
+        </p>
+        <p>Creation date : <span data-bind="text: CreationDate"></span></p>
+        <!-- /ko -->
+    </div>
+</div>

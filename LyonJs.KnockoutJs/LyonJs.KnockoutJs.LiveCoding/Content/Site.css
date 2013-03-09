@@ -1,0 +1,222 @@
+﻿html {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, hgroup, nav, section
+{
+    display: block;
+}
+
+h1, h2, h3 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+
+/* main layout
+----------------------------------------------------------*/
+
+header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background-color: #eeeeee;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+    header > div
+    {
+        display: table;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    header form
+    {
+        display: table-row;
+    }
+
+        header form > h1
+        {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        header form > div
+        {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+            header form > div > *
+            {
+                display: inline-block;
+            }
+
+header.homePage
+{
+    bottom: 0;
+    height: auto;
+}
+
+header.homePage form > h1, header.homePage form > div {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type=search]
+{
+    vertical-align: middle;
+    height: 32px;
+    width: 350px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #717171;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-shadow: 2px 2px 5px #444444;
+    -moz-box-shadow: 2px 2px 5px #444444;
+    box-shadow: 2px 2px 5px #444444;
+}
+
+button
+{
+    vertical-align: middle;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0;
+    background-color: #4d90fe;
+    background-image: -moz-linear-gradient(center top, #4d90fe, #4787ed);
+    background-image: -ms-linear-gradient(#4d90fe, #4787ed);
+    border: 1px solid #717171;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-shadow: 2px 2px 5px #444444;
+    -moz-box-shadow: 2px 2px 5px #444444;
+    box-shadow: 2px 2px 5px #444444;
+    height: 32px;
+    width: 200px;
+    margin: 0 10px;
+    margin-left: 5px;
+}
+
+#body > div
+{
+    left: 400px;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    margin: 10px;
+}
+
+    #body > div img
+    {
+        max-height: 60%;
+        max-width: 100%;
+    }
+
+aside
+{
+    width: 400px;
+    overflow-y: auto;
+    bottom: 0;
+    left: 0;
+    top: 80px;
+    position: fixed;
+    border-right-color: #cccccc;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+    aside ul
+    {
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    aside li
+    {
+        vertical-align: middle;
+    }
+
+        aside li:hover
+        {
+            background: #f4f4f4;
+        }
+
+    aside li > *
+    {
+        vertical-align: middle;
+    }
+
+    aside img
+    {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 5px;
+    }
+
+    aside .selected
+    {
+        background-color: #eeeeee;
+    }
+
+.noSelectedMug
+{
+    font-size: 3em;
+}
+
+#body > div.noResult {
+    left: 0;
+    font-size: 4em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.keywords span:after
+{
+    content: ",";
+}
+
+.keywords span:last-child:after
+{
+    content: ".";
+}

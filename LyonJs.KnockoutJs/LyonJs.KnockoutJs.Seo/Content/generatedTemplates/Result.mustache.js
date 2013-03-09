@@ -1,0 +1,1 @@
+var a=window.templates||(window.templates=[]);a.push({"Name":"Result","Value":"\u003cli data-bind=\"click: $parent.select, css: {selected: IsSelected}\"\u003e\n  \u003cimg data-bind=\"attr: { src: ImageUrl, alt: Name }\" alt=\"{{Name}}\" src=\"{{ImageUrl}}\" /\u003e\n  \u003cspan data-bind=\"text: Name\"\u003e{{Name}}\u003c/span\u003e\n\u003c/li\u003e"});

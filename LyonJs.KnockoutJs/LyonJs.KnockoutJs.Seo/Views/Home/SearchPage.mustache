@@ -1,0 +1,40 @@
+﻿<header>
+    <div>
+        <form action="/home/search" data-bind="submit: search" method="get">
+            <h1>LyonJs</h1>
+            <div>
+                <input type="search" data-bind="value: SearchValue, valueUpdate: 'afterkeydown'" placeholder="Search an unicorn..." />
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</header>
+<div id="body">
+  {{#HasResults}}
+  <aside>
+    <ul data-bind="cleanTemplate: {foreach:filtedResults, name:'Result', afterAdd: displayItem, beforeRemove: hideItem}">
+      {{#Results}}
+        {{>Result}}
+      {{/Results}}
+    </ul>
+  </aside>
+  <div>
+      <!-- ko { with: SelectedResult } -->
+      <img data-bind="attr: { src: ImageUrl, alt: Name }" />
+      <p data-bind="text: Name"></p>
+      <p class="keywords">Keyword : 
+          <!-- ko { foreach: Keywords } -->
+          <span data-bind="text: $data"></span>
+          <!-- /ko -->
+      </p>
+      <p>Creation date : <span data-bind="text: CreationDate"></span></p>
+      <!-- /ko -->
+      <!-- ko ifnot: HasSelectedResult -->
+      <p class="noSelectedUnicorn">Select an unicorn for more information</p>
+      <!-- /ko -->
+  </div>
+  {{/HasResults}}
+  {{^HasResults}}
+  <div class="noResult">No result</div>
+  {{/HasResults}}
+</div>

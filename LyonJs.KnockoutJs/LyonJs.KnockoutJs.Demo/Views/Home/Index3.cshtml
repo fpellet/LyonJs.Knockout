@@ -1,0 +1,27 @@
+﻿<header>
+    <div>
+        <form method="post" data-bind="submit: search">
+            <h1>LyonJs</h1>
+            <div>
+                <input type="search" data-bind="value: searchValue" placeholder="Search an unicorn..." />
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</header>
+<div id="body">
+    <aside>
+        <ul data-bind="foreach: results">
+            <li>
+                <img data-bind="attr: { src: ImageUri, alt: Name }" />
+                <span data-bind="text: Name"></span>
+            </li>
+        </ul>
+    </aside>
+    <div>
+        <img src="/Content/Unicorn/unicorn_7.gif" alt="Unicorn"/>
+        <p>Unicorn</p>
+        <p>Keyword : Unicorn</p>
+        <p>Creation date : 04/03/2013</p>
+    </div>
+</div>
